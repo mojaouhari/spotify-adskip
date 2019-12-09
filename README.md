@@ -16,8 +16,10 @@ Download the `spotify-adskip.sh` file. Keep it in a location of your choice, e.g
 
 Then, set up the script to be run on start-up by adding the following line to the `.profile` file in your home directory.
 ```
-sh ~/.scripts/spotify-adskip.sh
+sh ~/.scripts/spotify-adskip.sh &
 ```
+Don't forget the `&` at the end of the line, it's really important. Otherwise the system would hang at start-up!
+
 If you're having issues, read more on start-up scripts [here](https://medium.com/coding-blocks/getting-to-understand-linux-shell-s-start-up-scripts-and-the-environments-path-variable-fc672107b2d7).
 
 Now, every time you log into your account, this script will be running to make sure Spotify isn't playing any annoying ads!
